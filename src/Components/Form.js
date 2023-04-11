@@ -19,10 +19,17 @@ const Form = ({inputText,setInputText,todos,setTodos, setStatus}) => {
    }
   return ( 
         <form>
-         <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" placeholder='Add a new Todo'/>
-         <button onClick = {submitTodoHandler} className ="todo-button" type="submit">
-            <i className ="fas fa-plus-square"></i>
-         </button> 
+         <div className="input-group">
+            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" placeholder='Add a new Todo'/>
+            <button 
+               onClick = {submitTodoHandler} 
+               className ="todo-button" 
+               type="submit">
+                  <i 
+                     className ="fas fa-plus-square">
+                  </i>
+            </button> 
+         </div>
          <div className = "select"> 
             <select onChange={statusHandler} name="todos" className="filter-todo">
                <option value="all">ALL</option>

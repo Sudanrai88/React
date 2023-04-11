@@ -141,3 +141,36 @@
     transform: scale(1.5);
   }
   */
+  @media (max-width:650px) {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex: 1;
+      margin-right: 5px;
+    }
+
+    .todo-input {
+      flex: 1;
+      margin-right: 0px;
+      max-width: 60%;
+    }
+
+    .todo-button {
+      flex: 0 0 auto;
+    }
+
+    header {
+      font-size: 1.2rem;
+    }
+    
+
+  }
