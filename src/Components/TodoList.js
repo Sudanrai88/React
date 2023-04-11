@@ -6,7 +6,7 @@ function TodoList( {filteredTodos, todos, setTodos} ) {
      return (
         <div className="todo-container">
           <ul className="todo-list">
-            {todos.length > 0 ?(
+            {
               filteredTodos.map((todoo => (
                 <Todos 
                   text={todoo.text}
@@ -15,10 +15,7 @@ function TodoList( {filteredTodos, todos, setTodos} ) {
                   todos={todos} 
                   setTodos={setTodos}
                 />
-              )))
-            ) : (
-              <p className='noneFound'> DO SOMETHING!!! </p>
-            )}
+              )))}
           </ul>
         </div>
       )
